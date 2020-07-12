@@ -1079,6 +1079,18 @@ xsd:gYear rdf:type rdfs:Datatype .
                           skos:scopeNote "uponto.dp.12.4" .
 
 
+###  http://www.uponto.link/ontology/#hasTerrainType
+:hasTerrainType rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :projectMainDataProperties ;
+                rdfs:domain :Project ;
+                rdfs:range xsd:integer ;
+                dcterms:source "<a href=\"https://link.springer.com/article/10.1186/s40645-017-0157-2\" target=\"_blank\"> Iwahashi et al. 2018.</a> Global terrain classification using 280 m DEMs: segmentation, clustering, and reclassification." ;
+                rdfs:comment "An index representing project terrain type classification, landform patterns, and the ground characteristics of land; on a discrete Likert scale between 0, to 12, as proposed by Iwahashi et al." ;
+                rdfs:label "has Terrain Type" ;
+                skos:prefLabel "Terrain Type" ;
+                skos:scopeNote "uponto.dp.1.15" .
+
+
 ###  http://www.uponto.link/ontology/#hasTotalNumberOfFatalities
 :hasTotalNumberOfFatalities rdf:type owl:DatatypeProperty ;
                             rdfs:subPropertyOf :projectLaborAndSafetyDataProperties ;
@@ -2404,7 +2416,9 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://www.uponto.link/ontology/#Agent
 :Agent rdf:type owl:Class ;
+       dcterms:source "http://xmlns.com/foaf/0.1/Organization"^^xsd:anyURI ;
        rdfs:comment "An agent (eg. person, group, software or physical artifact)." ;
+       rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
        rdfs:label "Agent" ;
        ns:term_status "stable" .
 
@@ -2562,7 +2576,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
   """ ,
                     """A point, typically described using a coordinate system relative to Earth, such as WGS84.
   """ ;
-       rdfs:label "point" .
+       rdfs:label "Point" .
 
 
 ###  http://www.uponto.link/ontology/#PrivateEntity
@@ -2741,8 +2755,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          dcterms:source "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/confers" ;
          skos:scopeNote "uponto.op.4.1" ;
          owl:equivalentProperty "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/confers" ;
-         skos:prefLabel "confers" ;
-         rdfs:label "confers" .
+         rdfs:label "confers" ;
+         skos:prefLabel "confers" .
 
 
 :hasActualCost skos:scopeNote "uponto.op.3.2" ;
@@ -2776,8 +2790,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
 :hasContractParty owl:equivalentProperty "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasContractParty" ;
-                  rdfs:comment "As described by fibo: Indicates a person or organization that has entered into the binding agreement, accepting and/or conceding obligations, responsibilities, and benefits as specified" ;
                   rdfs:label "has Contract Party" ;
+                  rdfs:comment "As described by fibo: Indicates a person or organization that has entered into the binding agreement, accepting and/or conceding obligations, responsibilities, and benefits as specified" ;
                   skos:prefLabel "has Contract Party" ;
                   dcterms:source "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasContractParty" ;
                   skos:scopeNote "uponto.op.4.2" .
