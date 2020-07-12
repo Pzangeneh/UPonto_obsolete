@@ -238,6 +238,7 @@
         <dd>2020-07-01</dd>
         <dt>Version Information</dt>
         <dd>ver.5.1. Issued for Review. <a href="https://github.com/Pzangeneh/UPonto/issues" target=\"_blank\">Raise an issue.</a></dd>
+		
         <dt>License &amp; Rights</dt>
 		<dd>
             <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License.</a> All other rights are reserved for the creators.<br />
@@ -261,6 +262,9 @@
         <li><a href="#namespaces">Namespaces</a></li>
         <li><a href="#legend">Legend</a></li>
     </ol>
+
+
+
 <section id="overview">
     <h2>Overview</h2>
     <div class="figure">
@@ -284,6 +288,7 @@
 	
 </div>
 </section>
+
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
@@ -309,6 +314,7 @@
         <li><a href="#LightIndustrial">Light Industrial</a></li>
         <li><a href="#Organization">Organization</a></li>
         <li><a href="#Payment">Payment</a></li>
+        <li><a href="#Point">Point</a></li>
         <li><a href="#PrivateEntity">Private Entity</a></li>
         <li><a href="#Product">Product</a></li>
         <li><a href="#ProductionEntitlements">Production Entitlements</a></li>
@@ -322,7 +328,6 @@
         <li><a href="#Status">Status</a></li>
         <li><a href="#Taxes">Taxes</a></li>
         <li><a href="#Unit">Unit</a></li>
-        <li><a href="#Point">Point</a></li>
     </ul>
     <div class="entity class" id="AdjustedCost">
         <h3>Adjusted Cost<sup title="class" class="sup-c">c</sup></h3>
@@ -351,6 +356,18 @@
             <tr>
                 <th>IRI</th>
                 <td><code>http://www.uponto.link/ontology/#Agent</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://xmlns.com/foaf/0.1/
+                </td>
+            </tr>
+            <tr>
+                <th>Source</th>
+                <td>
+                    <a href="http://xmlns.com/foaf/0.1/Organization">http://xmlns.com/foaf/0.1/Organization</a>
+                </td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -430,8 +447,8 @@
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="http://www.uponto.link/ontology/#hasCommodity">hasCommodity</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="http://www.uponto.link/ontology/#hasContractedResource">hasContractedResource</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasCommodity">hasCommodity</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -495,8 +512,8 @@
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://www.uponto.link/ontology/#hasRole">hasRole</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.uponto.link/ontology/#hasIdentity">hasIdentity</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasRole">hasRole</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -545,42 +562,42 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://www.uponto.link/ontology/#AdjustedCost">AdjustedCost</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.uponto.link/ontology/#Cost">Cost</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#AdjustedCost">AdjustedCost</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://www.uponto.link/ontology/#projectCostDataProperties">projectCostDataProperties</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexEscalationLocalContracts">indexEscalationLocalContracts</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#isCostEstimate">isCostEstimate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#costIndices">costIndices</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasCostAdjustedForPPPandESC">hasCostAdjustedForPPPandESC</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexEscalationGlobalContracts">indexEscalationGlobalContracts</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexEscalationEquipment">indexEscalationEquipment</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasAdjustedCost">hasAdjustedCost</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexEscalationWeightedaverage">indexEscalationWeightedaverage</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasCostAdjustedForPPPandINF">hasCostAdjustedForPPPandINF</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexEscalationLabour">indexEscalationLabour</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#projectAdjustedCostProperties">projectAdjustedCostProperties</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexEscalationCommodities">indexEscalationCommodities</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasCostAdjustedForEXandINF">hasCostAdjustedForEXandINF</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasActualized">hasActualized</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="http://www.uponto.link/ontology/#indexPPPExchangeRateToUSD">indexPPPExchangeRateToUSD</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasCostScope">hasCostScope</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.uponto.link/ontology/#indexCurrencyExchangeRateToUSD">indexCurrencyExchangeRateToUSD</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexEscalationReference">indexEscalationReference</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasCostAdjustedForPPPandESC">hasCostAdjustedForPPPandESC</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.uponto.link/ontology/#hasCostAdjustedForEXandESC">hasCostAdjustedForEXandESC</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexEscalationCommodities">indexEscalationCommodities</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasCostAdjustedForPPPandINF">hasCostAdjustedForPPPandINF</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasActualized">hasActualized</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexEscalationWeightedaverage">indexEscalationWeightedaverage</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexEscalationLabour">indexEscalationLabour</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasCostAdjustedForEXandINF">hasCostAdjustedForEXandINF</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexEscalationLocalContracts">indexEscalationLocalContracts</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasCostScope">hasCostScope</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#projectAdjustedCostProperties">projectAdjustedCostProperties</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexEscalationEquipment">indexEscalationEquipment</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#costIndices">costIndices</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#isCostEstimate">isCostEstimate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasAdjustedCost">hasAdjustedCost</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#projectCostDataProperties">projectCostDataProperties</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexEscalationGlobalContracts">indexEscalationGlobalContracts</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexEscalationReference">indexEscalationReference</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="http://www.uponto.link/ontology/#hasEstimatedCost">hasEstimatedCost</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasActualized">hasActualized</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="http://www.uponto.link/ontology/#hasAdjustedCost">hasAdjustedCost</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="http://www.uponto.link/ontology/#hasActualCost">hasActualCost</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasActualized">hasActualized</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasEstimatedCost">hasEstimatedCost</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -601,8 +618,8 @@
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="http://www.uponto.link/ontology/#hasCountry">hasCountry</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="http://www.uponto.link/ontology/#hasState">hasState</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasCountry">hasCountry</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -871,10 +888,10 @@
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="http://www.uponto.link/ontology/#hasIdentity">hasIdentity</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasOperator">hasOperator</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="http://www.uponto.link/ontology/#hasIdentifiedContractParty">hasIdentifiedContractParty</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="http://www.uponto.link/ontology/#hasSponsor">hasSponsor</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasIdentity">hasIdentity</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasOperator">hasOperator</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -895,13 +912,13 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://www.uponto.link/ontology/#ProductionEntitlements">ProductionEntitlements</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#Fees">Fees</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#Taxes">Taxes</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#Royalties">Royalties</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#InfrastructureImprovement">InfrastructureImprovement</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.uponto.link/ontology/#Dividends">Dividends</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#Taxes">Taxes</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#Fees">Fees</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.uponto.link/ontology/#Bonuses">Bonuses</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#InfrastructureImprovement">InfrastructureImprovement</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#Royalties">Royalties</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#ProductionEntitlements">ProductionEntitlements</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -922,7 +939,10 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>A point, typically described using a coordinate system relative to Earth, such as WGS84.</p>
+                    <p>Uniquely identified by lat/long/alt. i.e.</p>
+<p>spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),
+  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).</p>
+<p>sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).</p>
                 </td>
             </tr>
             <tr>
@@ -1024,51 +1044,52 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://www.uponto.link/ontology/#Infrastructure">Infrastructure</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#Building">Building</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.uponto.link/ontology/#LightIndustrial">LightIndustrial</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#Infrastructure">Infrastructure</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.uponto.link/ontology/#HeavyIndustrial">HeavyIndustrial</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#Building">Building</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://www.uponto.link/ontology/#indexEconomicSecurity">indexEconomicSecurity</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexCountryRiskLendingPremium">indexCountryRiskLendingPremium</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#projectMainDataProperties">projectMainDataProperties</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasInfrastructureSector">hasInfrastructureSector</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexLendingInterestRate">indexLendingInterestRate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#projectIndexExtractableProperties">projectIndexExtractableProperties</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasCurrentCostOverrunprcnt">hasCurrentCostOverrunprcnt</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasDistancetoClosestCity">hasDistancetoClosestCity</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasOperator">hasOperator</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexCountryInflation">indexCountryInflation</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexEaseofDoingBusiness">indexEaseofDoingBusiness</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasRealCostOverrun">hasRealCostOverrun</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#dateDurationProjectTotal">dateDurationProjectTotal</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasScheduleOverrun">hasScheduleOverrun</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasContractType">hasContractType</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasSponsor">hasSponsor</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexCivilSecurity">indexCivilSecurity</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasActualProjectCostinUSDTotal">hasActualProjectCostinUSDTotal</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasProjectType">hasProjectType</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasDisclosure">hasDisclosure</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasBuildingSector">hasBuildingSector</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasProduct">hasProduct</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexPoliticalSecurity">indexPoliticalSecurity</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasContract">hasContract</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasHeavyIndustrialSector">hasHeavyIndustrialSector</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexEnforcingContracts">indexEnforcingContracts</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasClosestCity">hasClosestCity</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasLightIndustrialSector">hasLightIndustrialSector</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.uponto.link/ontology/#hasInfoCard">hasInfoCard</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexTimeToStartBusiness">indexTimeToStartBusiness</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasProjectTypeInSector">hasProjectTypeInSector</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexNRGI">indexNRGI</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexRMI">indexRMI</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasStatus">hasStatus</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexCorruptionPI">indexCorruptionPI</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasDisclosure">hasDisclosure</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasScheduleOverrun">hasScheduleOverrun</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexEnforcingContracts">indexEnforcingContracts</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexPoliticalSecurity">indexPoliticalSecurity</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#projectMainDataProperties">projectMainDataProperties</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#projectIndexExtractableProperties">projectIndexExtractableProperties</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.uponto.link/ontology/#indexBusinessDisclosureExtent">indexBusinessDisclosureExtent</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexLendingInterestRate">indexLendingInterestRate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasTerrainType">hasTerrainType</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexEaseofDoingBusiness">indexEaseofDoingBusiness</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexTimeToStartBusiness">indexTimeToStartBusiness</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasClosestCity">hasClosestCity</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasDistancetoClosestCity">hasDistancetoClosestCity</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasInfrastructureSector">hasInfrastructureSector</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexNRGI">indexNRGI</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasProjectType">hasProjectType</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexCivilSecurity">indexCivilSecurity</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasContract">hasContract</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasContractType">hasContractType</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasLightIndustrialSector">hasLightIndustrialSector</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexRMI">indexRMI</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasProduct">hasProduct</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasBuildingSector">hasBuildingSector</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasOperator">hasOperator</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasActualProjectCostinUSDTotal">hasActualProjectCostinUSDTotal</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexCorruptionPI">indexCorruptionPI</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasSponsor">hasSponsor</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexEconomicSecurity">indexEconomicSecurity</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasRealCostOverrun">hasRealCostOverrun</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasStatus">hasStatus</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasHeavyIndustrialSector">hasHeavyIndustrialSector</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasProjectTypeInSector">hasProjectTypeInSector</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexCountryInflation">indexCountryInflation</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexCountryRiskLendingPremium">indexCountryRiskLendingPremium</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#dateDurationProjectTotal">dateDurationProjectTotal</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasCurrentCostOverrunprcnt">hasCurrentCostOverrunprcnt</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1116,83 +1137,83 @@
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://www.uponto.link/ontology/#projectTeamDataProperties">projectTeamDataProperties</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#dateDurationPhase3">dateDurationPhase3</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#numSeparateProcesses">numSeparateProcesses</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexExperienceSponsorInSector">indexExperienceSponsorInSector</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#extremeClimateConditions">extremeClimateConditions</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#dateDurationCommissioning">dateDurationCommissioning</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasWeightedLaborProductivityAchieved">hasWeightedLaborProductivityAchieved</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasChangeInEngineeringFirmPhase3To4">hasChangeInEngineeringFirmPhase3To4</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexExperienceContractorInCountry">indexExperienceContractorInCountry</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.uponto.link/ontology/#enviromentalConstraints">enviromentalConstraints</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasSponsorAverageCoreTeamExperience">hasSponsorAverageCoreTeamExperience</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexScopeChangeDuringPhase4">indexScopeChangeDuringPhase4</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#numLongLeadProcurementPackages">numLongLeadProcurementPackages</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexGeographicCriticalityForSponsor">indexGeographicCriticalityForSponsor</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#prcntTargetReachedAtRampUp">prcntTargetReachedAtRampUp</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#prcntDurationOverlapConstructionAndEngineering">prcntDurationOverlapConstructionAndEngineering</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexInfrastructureAccessIssues">indexInfrastructureAccessIssues</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#numOptionsEnteringPhase3">numOptionsEnteringPhase3</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasOSHALostWorkdayRate">hasOSHALostWorkdayRate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasOSHARecordableIncidentRate">hasOSHARecordableIncidentRate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexPermittingAccess">indexPermittingAccess</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasTotalNumberOfFatalities">hasTotalNumberOfFatalities</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexSponsorAdequateStaffing">indexSponsorAdequateStaffing</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexIssuesDueToBasicData">indexIssuesDueToBasicData</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexWinterWeather">indexWinterWeather</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexStrategicCriticalityForSponsor">indexStrategicCriticalityForSponsor</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasOSHALostTimeCaseRate">hasOSHALostTimeCaseRate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#prcntRegionalLabor">prcntRegionalLabor</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasChangeInEngineeringFirmPhase3To4">hasChangeInEngineeringFirmPhase3To4</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#extremeClimateConditions">extremeClimateConditions</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.uponto.link/ontology/#indexManagementOwnership">indexManagementOwnership</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#dateDurationPhase4Construction">dateDurationPhase4Construction</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexWaterAccessIssues">indexWaterAccessIssues</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#prcntConstructionslippage">prcntConstructionslippage</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#definitionProperties">definitionProperties</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexSummerWeather">indexSummerWeather</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasOSHATotalIncidentRate">hasOSHATotalIncidentRate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.uponto.link/ontology/#prcntOvertimeHoursAtSite">prcntOvertimeHoursAtSite</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#dateDurationPhase4Engineering">dateDurationPhase4Engineering</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexPermittingSocialLicense">indexPermittingSocialLicense</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexProjectTechnologyClass">indexProjectTechnologyClass</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#numOptionsEnteringPhase4">numOptionsEnteringPhase4</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#prcntLaborUnions">prcntLaborUnions</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#numConstructionSub-contracts">numConstructionSub-contracts</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexPowerAccessIssues">indexPowerAccessIssues</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexIssuesWithProcurementVendors">indexIssuesWithProcurementVendors</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexExperienceEngineersInSector">indexExperienceEngineersInSector</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#numSponsorMajorManagementTurnover">numSponsorMajorManagementTurnover</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#numOptionsEnteringPhase2">numOptionsEnteringPhase2</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#projectLaborAndSafetyDataProperties">projectLaborAndSafetyDataProperties</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#prcntChangeOrderCostVersusEstimatedCAPEX">prcntChangeOrderCostVersusEstimatedCAPEX</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#prcntEngineeringCompletedAtConstructionStart">prcntEngineeringCompletedAtConstructionStart</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasSponsorCoreTeamSize">hasSponsorCoreTeamSize</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#prcntEngineeringslippage">prcntEngineeringslippage</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#prcntExecutionphaseslippage">prcntExecutionphaseslippage</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexExperienceContractorInSector">indexExperienceContractorInSector</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#prcntCapexPhase1and2">prcntCapexPhase1and2</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexExperienceEngineersInCountry">indexExperienceEngineersInCountry</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#numOwners">numOwners</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexLaborAccessIssues">indexLaborAccessIssues</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#prcntRegionalLabor">prcntRegionalLabor</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#dateDurationPhase4Construction">dateDurationPhase4Construction</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.uponto.link/ontology/#numShortLeadProcurementPackages">numShortLeadProcurementPackages</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasWeightedLaborProductivityAssumed">hasWeightedLaborProductivityAssumed</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasOSHARecordableIncidentRate">hasOSHARecordableIncidentRate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.uponto.link/ontology/#indexNIRI">indexNIRI</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#dateDurationRampUp">dateDurationRampUp</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasOSHASeverityRate">hasOSHASeverityRate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#prcntInternationalLabor">prcntInternationalLabor</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#prcntLocalLabor">prcntLocalLabor</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexExperienceSponsorInCountry">indexExperienceSponsorInCountry</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#projectClimateAccessPermitting">projectClimateAccessPermitting</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasOSHADARTRate">hasOSHADARTRate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#prcntCapexPhase3">prcntCapexPhase3</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexScopeChangeDuringPhase2">indexScopeChangeDuringPhase2</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#dateDurationPhase4Engineering">dateDurationPhase4Engineering</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasSponsorAverageCoreTeamExperience">hasSponsorAverageCoreTeamExperience</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexWaterAccessIssues">indexWaterAccessIssues</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexIssuesWithProcurementVendors">indexIssuesWithProcurementVendors</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexSummerWeather">indexSummerWeather</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.uponto.link/ontology/#indexViableExpansionPlan">indexViableExpansionPlan</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexPermittingTransportation">indexPermittingTransportation</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexPermittingOperations">indexPermittingOperations</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#indexPermittingEnvironmental">indexPermittingEnvironmental</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexInfrastructureAccessIssues">indexInfrastructureAccessIssues</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexScopeChangeDuringPhase4">indexScopeChangeDuringPhase4</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexIssuesDueToBasicData">indexIssuesDueToBasicData</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#prcntCapexPhase3">prcntCapexPhase3</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexExperienceContractorInSector">indexExperienceContractorInSector</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#dateDurationPhase3">dateDurationPhase3</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#numSponsorMajorManagementTurnover">numSponsorMajorManagementTurnover</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#projectTeamDataProperties">projectTeamDataProperties</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.uponto.link/ontology/#numProcurementPackages">numProcurementPackages</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#dateDurationPhase2">dateDurationPhase2</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#dateDurationRampUp">dateDurationRampUp</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasOSHADARTRate">hasOSHADARTRate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasWeightedLaborProductivityAssumed">hasWeightedLaborProductivityAssumed</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasWeightedLaborProductivityAchieved">hasWeightedLaborProductivityAchieved</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexPermittingOperations">indexPermittingOperations</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#prcntInternationalLabor">prcntInternationalLabor</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexPermittingTransportation">indexPermittingTransportation</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#numOptionsEnteringPhase2">numOptionsEnteringPhase2</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#prcntLocalLabor">prcntLocalLabor</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexScopeChangeDuringPhase2">indexScopeChangeDuringPhase2</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#prcntChangeOrderCostVersusEstimatedCAPEX">prcntChangeOrderCostVersusEstimatedCAPEX</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexLaborAccessIssues">indexLaborAccessIssues</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexWinterWeather">indexWinterWeather</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasOSHALostTimeCaseRate">hasOSHALostTimeCaseRate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#numOwners">numOwners</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexPermittingEnvironmental">indexPermittingEnvironmental</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#definitionProperties">definitionProperties</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.uponto.link/ontology/#indexScopeChangeDuringPhase3">indexScopeChangeDuringPhase3</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasOSHALostWorkdayRate">hasOSHALostWorkdayRate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasSponsorCoreTeamSize">hasSponsorCoreTeamSize</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#numOptionsEnteringPhase3">numOptionsEnteringPhase3</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#dateDurationCommissioning">dateDurationCommissioning</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasOSHASeverityRate">hasOSHASeverityRate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#prcntExecutionphaseslippage">prcntExecutionphaseslippage</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#prcntConstructionslippage">prcntConstructionslippage</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#projectLaborAndSafetyDataProperties">projectLaborAndSafetyDataProperties</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexPermittingSocialLicense">indexPermittingSocialLicense</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#projectClimateAccessPermitting">projectClimateAccessPermitting</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#prcntEngineeringslippage">prcntEngineeringslippage</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#prcntCapexPhase1and2">prcntCapexPhase1and2</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexProjectTechnologyClass">indexProjectTechnologyClass</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexExperienceContractorInCountry">indexExperienceContractorInCountry</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexExperienceSponsorInCountry">indexExperienceSponsorInCountry</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexGeographicCriticalityForSponsor">indexGeographicCriticalityForSponsor</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasOSHATotalIncidentRate">hasOSHATotalIncidentRate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexSponsorAdequateStaffing">indexSponsorAdequateStaffing</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#numOptionsEnteringPhase4">numOptionsEnteringPhase4</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexPowerAccessIssues">indexPowerAccessIssues</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexExperienceEngineersInCountry">indexExperienceEngineersInCountry</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#numSeparateProcesses">numSeparateProcesses</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#prcntDurationOverlapConstructionAndEngineering">prcntDurationOverlapConstructionAndEngineering</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasTotalNumberOfFatalities">hasTotalNumberOfFatalities</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexExperienceEngineersInSector">indexExperienceEngineersInSector</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexExperienceSponsorInSector">indexExperienceSponsorInSector</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexPermittingAccess">indexPermittingAccess</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#prcntLaborUnions">prcntLaborUnions</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#prcntTargetReachedAtRampUp">prcntTargetReachedAtRampUp</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#dateDurationPhase2">dateDurationPhase2</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#numConstructionSub-contracts">numConstructionSub-contracts</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#indexStrategicCriticalityForSponsor">indexStrategicCriticalityForSponsor</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#prcntEngineeringCompletedAtConstructionStart">prcntEngineeringCompletedAtConstructionStart</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#numLongLeadProcurementPackages">numLongLeadProcurementPackages</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1316,23 +1337,23 @@
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://www.uponto.link/ontology/#fromGate">fromGate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasEstimateBasisRating">hasEstimateBasisRating</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.uponto.link/ontology/#hasEstimatedCost">hasEstimatedCost</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="http://www.uponto.link/ontology/#hasTeamDevelopmentRating">hasTeamDevelopmentRating</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasEstimateBasisRating">hasEstimateBasisRating</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#projectRatingProperties">projectRatingProperties</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.uponto.link/ontology/#hasActualCost">hasActualCost</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasProjectControlsRating">hasProjectControlsRating</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#atGate">atGate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://www.uponto.link/ontology/#hasScopeDefinitionRating">hasScopeDefinitionRating</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.uponto.link/ontology/#untilGate">untilGate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#fromGate">fromGate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasProjectControlsRating">hasProjectControlsRating</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#projectRatingProperties">projectRatingProperties</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasScopeDefinitionRating">hasScopeDefinitionRating</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#atGate">atGate</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="http://www.uponto.link/ontology/#hasStatus">hasStatus</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="http://www.uponto.link/ontology/#hasReportingEntity">hasReportingEntity</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.uponto.link/ontology/#hasStatus">hasStatus</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -2242,6 +2263,7 @@
         <li><a href="#hasSponsorCoreTeamSize">has Sponsor Core Team Size</a></li>
         <li><a href="#hasStartDate">has Start Date</a></li>
         <li><a href="#hasTeamDevelopmentRating">has Team Development Rating</a></li>
+        <li><a href="#hasTerrainType">has Terrain Type</a></li>
         <li><a href="#hasTotalNumberOfFatalities">has Total Number Of Fatalities</a></li>
         <li><a href="#hasTotalNumberOfSiteMhrs">has Total Number Of Site Mhrs</a></li>
         <li><a href="#hasTotalProjectMhrs">has Total Project Mhrs</a></li>
@@ -3180,13 +3202,13 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    Categorizing contracts types to: EPC Lump Sum, EPCm, IPD Alliances, Mixed Contracting.
+                    Specifying the type of contract that is signed between parties about the Project instance.
                 </td>
             </tr>
             <tr>
                 <th>Reference</th>
                 <td>
-                    uponto.dp.13.2
+                    uponto.dp.1.7
                 </td>
             </tr>
             <tr>
@@ -4671,6 +4693,51 @@
                 <th>Range(s)</th>
                 <td>
                     <a href="http://www.w3.org/2001/XMLSchema#decimal">xsd:decimal</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasTerrainType">
+        <h3>has Terrain Type<sup title="datatype property" class="sup-dp">dp</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://www.uponto.link/ontology/#hasTerrainType</code></td>
+            </tr>
+            <tr>
+                <th>Source</th>
+                <td>
+                    <a href="https://link.springer.com/article/10.1186/s40645-017-0157-2" target="_blank"> Iwahashi et al. 2018.</a> Global terrain classification using 280 m DEMs: segmentation, clustering, and reclassification.
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    An index representing project terrain type classification, landform patterns, and the ground characteristics of land; on a discrete Likert scale between 0, to 12, as proposed by Iwahashi et al.
+                </td>
+            </tr>
+            <tr>
+                <th>Reference</th>
+                <td>
+                    uponto.dp.1.15
+                </td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="http://www.uponto.link/ontology/#projectMainDataProperties">projectMainDataProperties</a><sup class="sup-dp" title="datatype property">dp</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://www.uponto.link/ontology/#Project">Project</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -9630,5 +9697,7 @@ above the local reference ellipsoid).
           <tr><td><sup class="sup-ni" title="Named Individuals">ni</sup></td><td>Named Individuals</td></tr>
       </table>
   </section>
+  <script type="text/javascript" src="//counter.websiteout.net/js/36/4/0/0"> 
+  </script>
 </body>
 </html>
